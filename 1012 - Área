@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main() {
+    double A, B, C;
+    double pi = 3.14159;
+    double area;
+    double areaC;
+    double areaT;
+    double areaQ;
+    double areaR;
+    scanf("%lf",&A);
+    scanf("%lf",&B);
+    scanf("%lf",&C);
+    area = (A*C)/2;
+    areaC = pi*C*C;
+    areaT = ((A+B)*C)/2;
+    areaQ = B*B;
+    areaR = A*B;
+    printf("TRIANGULO: %.3lf\n", area);
+    printf("CIRCULO: %.3lf\n", areaC);
+    printf("TRAPEZIO: %.3lf\n", areaT);
+    printf("QUADRADO: %.3lf\n", areaQ);
+    printf("RETANGULO: %.3lf\n", areaR);
+    return 0;
+}
