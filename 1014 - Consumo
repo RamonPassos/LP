@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int X;
+    double Y;
+    double eficiencia;
+    scanf("%d", &X);
+    scanf("%lf", &Y);
+    eficiencia = X/Y;
+    printf("%.3lf km/l\n", eficiencia);
+    return 0;
+}
