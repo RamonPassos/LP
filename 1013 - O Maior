@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+ int a, b, c, maiorAB, maior;
+ scanf("%d",&a);
+ scanf("%d",&b);
+ scanf("%d",&c);
+ maiorAB= (a+b+abs(a-b))/2;
+ if(maiorAB>c){
+     printf("%d eh o maior\n",maiorAB);
+ }else{
+     printf("%d eh o maior\n",c);
+ }
+ 
+    return 0;
+}
