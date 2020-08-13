@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  int entrada,anos,meses,dias;
+  scanf("%d",&entrada);
+  anos=entrada/365;
+  entrada=entrada%365;
+  meses=entrada/30;
+  entrada=entrada%30;
+  dias=entrada;
+  printf("%d ano(s)\n",anos);
+  printf("%d mes(es)\n",meses);
+  printf("%d dia(s)\n",dias);
+  return 0;
+}
