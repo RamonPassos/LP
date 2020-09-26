@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int main() {
+  int matriz[5]; 
+  int count,countn, i,countp,counti;
+  count = 0;
+  countn = 0;
+  countp=0;
+  counti=0;
+  scanf("%d %d %d %d %d",&matriz[0],&matriz[1],&matriz[2],&matriz[3],&matriz[4]);
+  for(i=0; i<5; i++){
+    if(matriz[i]>0){
+      count = count +1;
+      
+    }
+    if(matriz[i]<0){
+      countn= countn+1;
+    }
+    if(matriz[i]%2==0){
+      countp = countp+1;
+    }else{
+      counti = counti+1;
+    }
+  }
+  printf("%d valor(es) par(es)\n",countp);
+  printf("%d valor(es) impar(es)\n",counti);
+  printf("%d valor(es) positivo(s)\n",count);
+  printf("%d valor(es) negativo(s)\n",countn);
+    return 0;
+}
