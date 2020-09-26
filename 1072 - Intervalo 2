@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() {
+  int countin,countout,i,N,testes,num;
+    countout=0;
+    countin=0;
+    scanf("%d",&testes);
+    for(i=0; i<testes; i++){
+      scanf("%d",&num);
+      
+      if(num>=10 && num<=20){
+        countin++;
+      }else{
+        countout++;
+      }
+    }
+    printf("%d in\n",countin);
+    printf("%d out\n",countout);
+    return 0;
+}
