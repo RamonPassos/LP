@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+  double matriz[6], media,soma; 
+  int count, i;
+  count = 0;
+  soma = 0;
+  scanf("%lf %lf %lf %lf %lf %lf",&matriz[0],&matriz[1],&matriz[2],&matriz[3],&matriz[4],&matriz[5]);
+  for(i=0; i<6; i++){
+    if(matriz[i]>0){
+      count = count +1;
+      soma = soma + matriz[i];
+    }
+  }
+  media = soma/count;
+  printf("%d valores positivos\n",count);
+  printf("%.1lf\n",media);
+    return 0;
+}
