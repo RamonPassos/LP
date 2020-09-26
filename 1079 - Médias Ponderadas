@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+int main() {
+  int testes,i;
+  double nota1, nota2,nota3,media;
+  scanf("%d",&testes);
+  for(i=0; i<testes; i++){
+    scanf("%lf %lf %lf",&nota1,&nota2,&nota3);
+    media = (nota1*2+ nota2*3+nota3*5)/10;
+    printf("%.1lf\n",media);
+  }
+    return 0;
+}
