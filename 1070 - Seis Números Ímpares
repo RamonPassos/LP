@@ -1,0 +1,37 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int X;
+    int matriz[6];
+    scanf("%d",&X);
+    if(X%2==0){
+        matriz[0] = X+1; 
+        matriz[1] = X+3;
+        matriz[2] = X+5;
+        matriz[3] = X+7;
+        matriz[4] = X+9;
+        matriz[5] = X+11;
+        printf("%d\n",matriz[0]);
+        printf("%d\n",matriz[1]);
+        printf("%d\n",matriz[2]);
+        printf("%d\n",matriz[3]);
+        printf("%d\n",matriz[4]);
+        printf("%d\n",matriz[5]);
+    }else {
+        matriz[0] = X; 
+        matriz[1] = X+2;
+        matriz[2] = X+4;
+        matriz[3] = X+6;
+        matriz[4] = X+8;
+        matriz[5] = X+10;
+        printf("%d\n",matriz[0]);
+        printf("%d\n",matriz[1]);
+        printf("%d\n",matriz[2]);
+        printf("%d\n",matriz[3]);
+        printf("%d\n",matriz[4]);
+        printf("%d\n",matriz[5]);
+    }
+ 
+    return 0;
+}
